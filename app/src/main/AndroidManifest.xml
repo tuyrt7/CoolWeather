@@ -13,11 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <service
+            android:name=".AutoUpdateService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
         <!--
         Application 中设置属性：usesCleartextTraffic
         android 8 以后，明文（未加密）的http请求会出现错误
         -->
-
         <activity android:name=".WeatherActivity">
         </activity>
         <activity android:name=".MainActivity">
